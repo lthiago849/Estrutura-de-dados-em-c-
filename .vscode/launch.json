@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/thiago/Documentos/faculdade/Estruturas de Dados",
-      "program": "/home/thiago/Documentos/faculdade/Estruturas de Dados/build/Debug/outDebug",
+      "cwd": "/home/thiago/Documentos/Estrutura-de-dados-em-c-/lista1",
+      "program": "/home/thiago/Documentos/Estrutura-de-dados-em-c-/lista1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
