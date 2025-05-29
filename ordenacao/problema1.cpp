@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+void selection_sort(int vetor[], int tam){
+ int menor, aux_troca;
+ for (int indice = 0; indice < tam-1; indice++) {
+ menor = indice;
+ for (int j = indice + 1; j < tam; j++) {
+ if (vetor[j] < vetor[menor]){
+ menor = j;
+ }
+ }
+ aux_troca = vetor[indice];
+ vetor[indice] = vetor[menor];
+ vetor[menor] = aux_troca;
+ }
+}
+
+
+int main(){
+    int tam;
+    cout<<"insira o tamanho da lista: "<<endl;
+    cin>>tam;
+    int vetor[tam];
+    cout<<"insira os elementos da lista : "<<endl;
+
+    for (int i = 0; i < tam; i++)
+    {
+        cout<<"insira elemento da posicao "<< i+ 1<< ": "<<endl;
+        cin>>vetor[i];
+    }
+    
+    selection_sort(vetor,tam);
+
+    for (int i = 0; i < tam; i++)
+    {
+        cout<<vetor[i]<<" ";
+    }
+    cout<<endl;
+    return 0;
+}
